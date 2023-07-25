@@ -1,0 +1,494 @@
+{
+	"Advanced Threat Protection - Advanced Policy Settings": {
+		"advancedThreatSettings": {
+			"referencevalues": {
+				"riskTolerance": 35,
+				"cmdCtlServerBlocked": true,
+				"cmdCtlTrafficBlocked": true,
+				"malwareSitesBlocked": true,
+				"activeXBlocked": true,
+				"browserExploitsBlocked": true,
+				"fileFormatVunerabilitesBlocked": true,
+				"knownPhishingSitesBlocked": true,
+				"suspectedPhishingSitesBlocked": true,
+				"suspectAdwareSpywareSitesBlocked": true,
+				"webspamBlocked": true,
+				"ircTunnellingBlocked": true,
+				"anonymizerBlocked": true,
+				"cookieStealingBlocked": true,
+				"potentialMaliciousRequestsBlocked": true,
+				"bitTorrentBlocked": true,
+				"torBlocked": true,
+				"googleTalkBlocked": true,
+				"sshTunnellingBlocked": true,
+				"cryptoMiningBlocked": true,
+				"adSpywareSitesBlocked": true,
+				"maliciousUrls": []
+			},
+			"recommendations": {
+				"riskTolerance": {
+					"friendlyname": "Page Risk value",
+					"comment": "Zscaler recommends setting this value to 35 as a best practice, as this provides a good balance between security and usability."
+				},
+				"cmdCtlServerBlocked": {
+					"friendlyname": "Command & Control Servers",
+					"comment": "Best Practice is to block C&C servers to increase security posture"
+				},
+				"cmdCtlTrafficBlocked": {
+					"friendlyname": "Command & Control Traffic",
+					"comment": "Best Practice is to block C&C servers to increase security posture"
+				},
+				"malwareSitesBlocked": {
+					"friendlyname": "Malicious Content & Sites",
+					"comment": "Best Practice is to block malicious sites to increase security posture"
+				},
+				"activeXBlocked": {
+					"friendlyname": "Vulnerable ActiveX Controls",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"browserExploitsBlocked": {
+					"friendlyname": "Browser Exploits",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"fileFormatVunerabilitesBlocked": {
+					"friendlyname": "File Format Vulnerabilities",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"knownPhishingSitesBlocked": {
+					"friendlyname": "Blocked Malicious URLs",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"suspectedPhishingSitesBlocked": {
+					"friendlyname": "Known Phishing Sites",
+					"comment": "Best Practice is to block this type of control to increase security posture - phising typically leads to information theft or compromise"
+				},
+				"suspectAdwareSpywareSitesBlocked": {
+					"friendlyname": "Suspected Spyware Sites",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"webspamBlocked": {
+					"friendlyname": "Web Spam",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"ircTunnellingBlocked": {
+					"friendlyname": "IRC Tunneling",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"anonymizerBlocked": {
+					"friendlyname": "Anonymizers",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"cookieStealingBlocked": {
+					"friendlyname": "Cookie Stealing",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"potentialMaliciousRequestsBlocked": {
+					"friendlyname": "Potentially Malicious Requests",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"bitTorrentBlocked": {
+					"friendlyname": "BitTorrent",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"torBlocked": {
+					"friendlyname": "Tor",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"googleTalkBlocked": {
+					"friendlyname": "Google Hangouts",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"sshTunnellingBlocked": {
+					"friendlyname": "SSH Tunneling",
+					"comment": "Best Practice is to block this type of control to increase security posture. Before enabling this functionality, carefully assess the potention risks and impact to the production environment as some business (critical) applications may rely on creating SSH Tunnels."
+				},
+				"cryptoMiningBlocked": {
+					"friendlyname": "Cryptomining",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"adSpywareSitesBlocked": {
+					"friendlyname": "Known Adware & Spyware Sites",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"maliciousUrls": {
+					"friendlyname": "Blocked Malicious URLs",
+					"comment": "Use as needed. Consider reviewing the URLs whether all are still relevant."
+				}
+			}
+		}
+	},
+	"URL & Cloud App Control - Advanced Policy Settings": {
+		"advancedUrlFilterAndCloudAppSettings": {
+			"referencevalues": {
+				"enableDynamicContentCat": true,
+				"considerEmbeddedSites": false,
+				"enforceSafeSearch": true,
+				"enableMsftO365": true,
+				"enableUcaasZoom": false,
+				"enableUcaasLogMeIn": true,
+				"enableUcaasRingCentral": true,
+				"blockSkype": false,
+				"enableNewlyRegisteredDomains": false,
+				"enableBlockOverrideForNonAuthUser": false,
+				"enableCIPACompliance": false
+			},
+			"recommendations": {
+				"enableDynamicContentCat": {
+					"friendlyname": "Enable AI/ML based Content Categorization",
+					"comment": "Recommended to enhance categorization of unknown sites"
+				},
+				"considerEmbeddedSites": {
+					"friendlyname": "Enable Embedded Sites Categorization",
+					"comment": "Recommended to improve categorization "
+				},
+				"enforceSafeSearch": {
+					"friendlyname": "Enforce SafeSearch",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"enableMsftO365": {
+					"friendlyname": "Enable Microsoft-Recommended One Click Office 365 Configuration",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"enableUcaasZoom": {
+					"friendlyname": "Zoom",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"enableUcaasLogMeIn": {
+					"friendlyname": "LogMeIn/GoTo",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"enableUcaasRingCentral": {
+					"friendlyname": "RingCentral",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"blockSkype": {
+					"friendlyname": "Skype",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"enableNewlyRegisteredDomains": {
+					"friendlyname": "Enable Newly Registered Domain Lookup",
+					"comment": "Recommend to identify sites that have been newly registered for which we do not yet have enough reputation data"
+				},
+				"enableBlockOverrideForNonAuthUser": {
+					"friendlyname": "Enable Identity-based Block Override",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"enableCIPACompliance": {
+					"friendlyname": "Enable CIPA Compliance",
+					"comment": "Optional, depends on the company requirements"
+				}
+			}
+		}
+	},
+	"Mobile Malware Protection": {
+		"mobileAdvanceThreatSettings": {
+			"referencevalues": {
+				"blockAppsWithMaliciousActivity": true,
+				"blockAppsWithKnownVulnerabilities": true,
+				"blockAppsSendingUnencryptedUserCredentials": true,
+				"blockAppsSendingLocationInfo": false,
+				"blockAppsSendingPersonallyIdentifiableInfo": false,
+				"blockAppsSendingDeviceIdentifier": false,
+				"blockAppsCommunicatingWithAdWebsites": false,
+				"blockAppsCommunicatingWithRemoteUnknownServers": false
+			},
+			"recommendations": {
+				"blockAppsWithMaliciousActivity": {
+					"friendlyname": "Block Apps With Malicious Activity",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"blockAppsWithKnownVulnerabilities": {
+					"friendlyname": "Block Apps With Known Vulnerabilities",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"blockAppsSendingUnencryptedUserCredentials": {
+					"friendlyname": "Block Apps Sending Unencrypted User Credentials",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"blockAppsSendingLocationInfo": {
+					"friendlyname": "Block Apps Sending Location Information",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"blockAppsSendingPersonallyIdentifiableInfo": {
+					"friendlyname": "Block Apps Sending Personally Identifiable Information",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"blockAppsSendingDeviceIdentifier": {
+					"friendlyname": "Block Apps Sending Device Identifiers",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"blockAppsCommunicatingWithAdWebsites": {
+					"friendlyname": "Block Apps Sending Communication To Ad Servers",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"blockAppsCommunicatingWithRemoteUnknownServers": {
+					"friendlyname": "Block Apps Sending Communication To Unknown Servers",
+					"comment": "Optional, depends on the company requirements"
+				}
+			}
+		}
+	},
+	"Advanced Policy Settings": {
+		"advancedSettings": {
+			"referencevalues": {
+				"authBypassUrlCategories": [
+					"NONE"
+				],
+				"authBypassUrls": [
+					"NONE"
+				],
+				"authBypassApps": [],
+				"kerberosBypassUrlCategories": [
+					"NONE"
+				],
+				"kerberosBypassUrls": [],
+				"kerberosBypassApps": [],
+				"enableDnsResolutionOnTransparentProxy": true,
+				"enableEvaluatePolicyOnGlobalSSLBypass": false,
+				"enableOffice365": true,
+				"logInternalIp": false,
+				"enforceSurrogateIpForWindowsApp": false,
+				"trackHttpTunnelOnHttpPorts": true,
+				"blockHttpTunnelOnNonHttpPorts": true,
+				"blockDomainFrontingOnHostHeader": true,
+				"zscalerClientConnector1AndPacRoadWarriorInFirewall": true,
+				"cascadeUrlFiltering": true,
+				"enablePolicyForUnauthenticatedTraffic": true,
+				"blockNonCompliantHttpRequestOnHttpPorts": true,
+				"http2NonbrowserTrafficEnabled": false
+			},
+			"recommendations": {
+				"authBypassUrlCategories": {
+					"friendlyname": "Auth Exempted URL Categories",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"authBypassUrls": {
+					"friendlyname": "Auth Exempted URLs",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"authBypassApps": {
+					"friendlyname": "Auth Exempted Applications",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"kerberosBypassUrlCategories": {
+					"friendlyname": "Kerberos Exempted URL Categories",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"kerberosBypassUrls": {
+					"friendlyname": "Kerberos Exempted URLs",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"kerberosBypassApps": {
+					"friendlyname": "Kerberos Exempted Applications",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"enableDnsResolutionOnTransparentProxy": {
+					"friendlyname": "Optimize DNS Resolution",
+					"comment": "Optional, increases security posture when using transparent"
+				},
+				"enableOffice365": {
+					"friendlyname": "Office 365 One Click Configuration",
+					"comment": "Deprecated option"
+				},
+				"logInternalIp": {
+					"friendlyname": "Log Internal IPs from XFF Headers",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"enforceSurrogateIpForWindowsApp": {
+					"friendlyname": "Enforce Surrogate IP Authentication",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"trackHttpTunnelOnHttpPorts": {
+					"friendlyname": "Inspect Tunneled HTTP Traffic",
+					"comment": "Best Practice is to inspect this type of traffic to increase security posture"
+				},
+				"blockHttpTunnelOnNonHttpPorts": {
+					"friendlyname": "Block Tunneling to Non-HTTP/HTTPS Ports",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"blockDomainFrontingOnHostHeader": {
+					"friendlyname": "Block Domain Fronting",
+					"comment": "Best Practice is to block this type of control to increase security posture"
+				},
+				"zscalerClientConnector1AndPacRoadWarriorInFirewall": {
+					"friendlyname": "Firewall for Z-Tunnel 1.0 and PAC Road Warriors",
+					"comment": "Best Practice is to enable this option to activate Cloud Firewall for Road Warriors using ZCC"
+				},
+				"cascadeUrlFiltering": {
+					"friendlyname": "Allow Cascading to URL Filtering",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"enablePolicyForUnauthenticatedTraffic": {
+					"friendlyname": "Enable Policy For Unauthenticated Traffic",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"blockNonCompliantHttpRequestOnHttpPorts": {
+					"friendlyname": "Block Non-RFC Compliant HTTP Traffic on HTTP/HTTPS Ports",
+					"comment": "Optional, depends on the company requirements"
+				}
+			}
+		}
+	},
+	"Malware Protection - Malware Policy ": {
+		"virusSpywareSettings": {
+			"referencevalues": {
+				"inspectInbound": true,
+				"inspectOutbound": true,
+				"inspectHttp": true,
+				"inspectFtpOverHttp": true,
+				"inspectFtp": true,
+				"virusBlocked": true,
+				"unwantedApplicationsBlocked": true,
+				"trojanBlocked": true,
+				"wormBlocked": true,
+				"adwareBlocked": true,
+				"spywareBlocked": true,
+				"ransomwareBlocked": true
+			},
+			"recommendations": {
+				"inspectInbound": {
+					"friendlyname": "Inspect Inbound Traffic",
+					"comment": "Best Practice is to inspect this type of traffic to increase security posture"
+				},
+				"inspectOutbound": {
+					"friendlyname": "Inspect Outbound Traffic",
+					"comment": "Best Practice is to inspect this type of traffic to increase security posture"
+				},
+				"inspectHttp": {
+					"friendlyname": "Inspect Outbound Traffic",
+					"comment": "Best Practice is to inspect this type of traffic to increase security posture"
+				},
+				"inspectFtpOverHttp": {
+					"friendlyname": "Inspect FTP over HTTP",
+					"comment": "Best Practice is to inspect this type of traffic to increase security posture"
+				},
+				"inspectFtp": {
+					"friendlyname": "Inspect FTP",
+					"comment": "Best Practice is to inspect this type of traffic to increase security posture"
+				},
+				"virusBlocked": {
+					"friendlyname": "Block Viruses",
+					"comment": "Best Practice is to block this type of traffic to increase security posture"
+				},
+				"unwantedApplicationsBlocked": {
+					"friendlyname": "Block Unwanted Applications",
+					"comment": "Best Practice is to block this type of traffic to increase security posture"
+				},
+				"trojanBlocked": {
+					"friendlyname": "Block Trojans",
+					"comment": "Best Practice is to block this type of traffic to increase security posture"
+				},
+				"wormBlocked": {
+					"friendlyname": "Block Worms",
+					"comment": "Best Practice is to block this type of traffic to increase security posture"
+				},
+				"adwareBlocked": {
+					"friendlyname": "Block Adware",
+					"comment": "Best Practice is to block this type of traffic to increase security posture"
+				},
+				"spywareBlocked": {
+					"friendlyname": "Block Spyware",
+					"comment": "Best Practice is to block this type of traffic to increase security posture"
+				},
+				"ransomwareBlocked": {
+					"friendlyname": "Block Sandbox Ransomware",
+					"comment": "Best Practice is to block this type of traffic to increase security posture"
+				}
+			}
+		}
+	},
+	"Malware Protection - Security Exceptions": {
+		"malwarePolicy": {
+			"referencevalues": {
+				"blockUnscannableFiles": true,
+				"blockPasswordProtectedArchiveFiles": true
+			},
+			"recommendations": {
+				"blockPasswordProtectedArchiveFiles": {
+					"friendlyname": "Block Password-Protected Files",
+					"comment": "Optional, depends on the company requirements"
+				},
+				"blockUnscannableFiles": {
+					"friendlyname": "Block Unscannable Files",
+					"comment": "Best Practice is to block this type of file to increase security posture"
+				}
+			}
+		}
+	},
+	"FTP Control": {
+		"ftpSettings": {
+			"referencevalues": {
+				"ftpEnabled": true,
+				"ftpOverHttpEnabled": true,
+				"urlCategories": [
+					"NONE"
+				]
+			},
+			"recommendations": {
+				"ftpEnabled": {
+					"friendlyname": "Allow Native FTP",
+					"comment": "Zscaler recommends to Allow Native FTP"
+				},
+				"ftpOverHttpEnabled": {
+					"friendlyname": "Allow FTP over HTTP",
+					"comment": "Zscaler recommends to Allow FTP over HTTP"
+				},
+				"urlCategories": {
+					"friendlyname": "Allowed URLs & URL Categories",
+					"comment": "Best Practice is to set 'Allow Any URL Category' to disabled and not to select any 'Allowed URL Categories' or 'Allowed URLs'."
+				}
+			}
+		}
+	},
+	"NSS Servers": {
+		"nssServers": {
+			"index": "name",
+			"referencevalues": {
+				"state": "HEALTHY",
+				"status": "ENABLED"
+			},
+			"recommendations": {
+				"state": {
+					"friendlyname": "Server health",
+					"comment": "Zscaler recommends reviewing any NSS server that is not in a healthy state."
+				},
+				"status": {
+					"friendlyname": "Configuration status",
+					"comment": "Zscaler recommends removing any unused NSS Servers"
+				}
+			}
+		}
+	},
+        "NSS Feeds": {
+                "nssFeeds": {
+                        "index": "name",
+                        "referencevalues": {
+                                "serviceIp": "HEALTHY",
+                                "feedStatus": "ENABLED"
+                        },
+                        "recommendations": {
+                                "serviceIp": {
+                                        "friendlyname": "ServiceIP",
+                                        "comment": "BSBSBSBSBSBS."
+                                },
+                                "feedStatus": {
+                                        "friendlyname": "Feed status",
+                                        "comment": "Blah blah blah"
+                                }
+                        }
+                }
+        },
+	"Authentication Settings - Authentication Profile": {
+		"authSettings": {
+			"referencevalues": {
+				"authFrequency": "PERMANENT_COOKIE"
+			},
+			"recommendations": {
+				"authFrequency": {
+					"friendlyname": "Authentication Frequency",
+					"comment": "Zscaler recommends settings the authentication frequency to \"Only Once\". This setting does not affect Zscaler Client Connector users."
+				}
+			}
+		}
+	}
+}
